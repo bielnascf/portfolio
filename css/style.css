@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'valorant';
+    src: url('../fonts/valorantFont.ttf') format('trueType');
+}
+
+/* Mobile */
+
+.displayMobileMenu {display: none;}
+
+.mobileMenu-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid #cfc5c5ab;
+}
+
+.mobileMenu-container span {
+    padding: 0.7rem;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.mobileMenuLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+
+    background-image: linear-gradient(to right,#00C0FD,#E70FAA);
+}
+
+.mobileLink {
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 1rem;
+    border-bottom: 1px solid #fff;
+}
+
+.mobileSocialMediaMenuLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+
+    background-image: linear-gradient(to right,#00C0FD,#E70FAA);
+
+}
+
+.mobileSocialMediaMenuLinks img {
+    max-width: 40px;
+    border-radius: 50%;
+    filter: invert(1);
+}
+
+.mobileSocialMediaLink {
+    transition: all 0.3s ease-in-out;
+}
+
+.mobileMenu-container span:hover {
+    background-image: linear-gradient(to right,#00C0FD,#E70FAA);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.mobileLink:hover {
+    color: #000;
+    background-color: #ffffff;
+    transition: all 0.3s ease-in;
+}
+
+.mobileSocialMediaLink:hover {
+    transform: scale(1.1);
+    filter: invert(1);
+}
+
+/* Desktop, Laptop, Tablet */
+
+.displayDesktopMenu {display: none;}
+
+.navLinks-container {
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    font-family: 'valorant', 'Poppins', sans-serif;
+    font-size: 1.3rem;
+
+    background-image: linear-gradient(to right, #00C0FD, #E70FAA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-logo:hover {
+    transform: scale(1.03);
+}
+
+.nav-links {
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-links a {
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #000;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #00C0FD, #E70FAA);
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 80%;
+}
+
+
+

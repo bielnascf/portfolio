@@ -3,15 +3,35 @@
     src: url('../fonts/valorantFont.ttf') format('trueType');
 }
 
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+}
+
+
 /* Mobile */
 
-.displayMobileMenu {display: none;}
+.displayMobileMenu {
+    display: none;
+}
+
+#closeMenu {display:none}
 
 .mobileMenu-container {
     display: flex;
     flex-direction: column;
     width: 100%;
     border-bottom: 1px solid #cfc5c5ab;
+    background: #ffffffbd;
+    position: fixed;
 }
 
 .mobileMenu-container span {
@@ -76,6 +96,118 @@
     filter: invert(1);
 }
 
+.presentation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-evenly;
+
+
+    padding: 0 3rem;
+}
+
+.presentation-container .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+
+.presentation-container .image-container img {
+    display: flex;
+    max-width: 280px;
+    width: 80%;
+    border-radius: 50%;
+    border: 4px solid transparent;
+
+    background-image: linear-gradient(to top, #00C0FD, #E70FAA);
+    background-clip: border-box;
+    -webkit-background-clip: border-box;
+    -webkit-text-fill-color: transparent;
+}
+
+.presentation-container h1 {
+    font-size: 2rem;
+    padding-top: 4rem;
+    color: #42446E;
+}
+
+.presentation-container .gabrielName {
+    background-image: linear-gradient(to right, #00C0FD, #E70FAA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 90vh;
+    gap: 1.5rem;
+
+
+    padding: 0 3rem;
+}
+
+.skills-container h2 {
+    text-align: center;
+    font-size: 1.7rem;
+    color: #42446E;
+}
+
+.skills-container p {
+    color: #9c9898;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.skills-container .tech-container {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+    gap: 4rem;
+    padding: 2rem 0;
+
+}
+
+.skills-container .tech-container img {
+    width: 45px;
+    cursor: pointer;
+}
+
+
+.tech-container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 60px;
+    height: 60px;
+
+}
+
+.tech-container div:hover p{
+    opacity: 1;
+}
+
+
+.tech-container p {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #000000;
+    display: block;
+    opacity: 0;
+
+    transition: all 0.3s ease-in-out;
+}
+
+
+
 /* Desktop, Laptop, Tablet */
 
 .displayDesktopMenu {display: none;}
@@ -128,6 +260,5 @@
 .nav-links a:hover::after {
     width: 80%;
 }
-
 
 

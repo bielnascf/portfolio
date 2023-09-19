@@ -1,0 +1,72 @@
+@media (min-width: 768px) {
+    .mobileMenu-container {display: none;}
+    .displayDesktopMenu {display: block;}
+
+    .presentation-container {
+        flex-direction: row;
+        justify-content: space-around;
+        height: 90vh;
+    }
+
+.presentation-container .gabrielName {
+
+    display: flex;
+    position: absolute;
+    font-weight: bolder;
+    margin: auto;
+    width: 409.89px;
+
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+
+    white-space: nowrap;
+    overflow: hidden;
+
+    background-image: linear-gradient(to right, #00C0FD, #E70FAA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+    
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+    .presentation-container h1 {
+        padding-top: 0;
+        font-size: 2.5rem;
+    }
+
+    .presentation-container .image-container {
+        padding-bottom: 0;
+    }
+
+    .presentation-container .image-container img {
+        max-width: 350px;
+    }
+
+    .skills-container {
+        height: 90vh;
+    }
+}
+
+@media (max-width: 425px) {
+
+
+    .skills-container {
+        height: 100vh;
+    }
+
+    .skills-container .tech-container {
+        margin: 0;
+        width: 100%;
+    }
+
+}

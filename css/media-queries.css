@@ -1,6 +1,13 @@
 @media (min-width: 768px) {
     .mobileMenu-container {display: none;}
-    .displayDesktopMenu {display: block;}
+    .displayDesktopMenu {
+        background-color: #fff;
+        width: 95vw;
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     .presentation-container {
         flex-direction: row;
@@ -11,12 +18,12 @@
 .presentation-container .gabrielName {
 
     display: flex;
-    position: absolute;
     font-weight: bolder;
     margin: auto;
     width: 409.89px;
+    margin: 0;
 
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    animation: typing 2s steps(22);
 
     white-space: nowrap;
     overflow: hidden;
@@ -30,12 +37,6 @@
 @keyframes typing {
     from {
         width: 0
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent
     }
 }
 
@@ -55,6 +56,29 @@
     .skills-container {
         height: 90vh;
     }
+
+    .projects-container {
+        padding-top: 6rem;
+        align-items: center;
+    }
+
+    .projects-container .cards-container {
+        justify-content: space-evenly;
+    }
+
+    .projects-container .card {
+        max-width: 300px;
+    }
+
+    .card .projects-infos {
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media (min-width: 1352px) {
+    .displayDesktopMenu {
+        max-width: 1366px;
+    }
 }
 
 @media (max-width: 425px) {
@@ -62,11 +86,16 @@
 
     .skills-container {
         height: 100vh;
+        padding-top: 4rem;
     }
 
     .skills-container .tech-container {
         margin: 0;
         width: 100%;
+    }
+
+    .projects-container {
+        padding-top: 4rem;
     }
 
 }

@@ -87,6 +87,8 @@ body, html {
     border-bottom: 1px solid #cfc5c579;
     background: var(--background);
     position: fixed;
+
+    transition: background .3s ease-in;
 }
 
 .mobileMenu-container span {

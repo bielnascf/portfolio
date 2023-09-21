@@ -353,6 +353,7 @@ body, html {
     padding: 1.5rem 2rem;
 
     background-color: var(--background);
+    transition: background .3s ease-in;
 }
 
 .navLinks-container {

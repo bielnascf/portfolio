@@ -1,18 +1,23 @@
 @media (min-width: 768px) {
     .mobileMenu-container {display: none;}
     .displayDesktopMenu {
-        background-color: #fff;
-        width: 95vw;
+        width: 100vw;
         display: flex;
         position: fixed;
         justify-content: space-between;
         align-items: center;
     }
 
+    .nav-logo {
+        padding-right: 1rem;
+    }
+
+    .darkMode-button {
+
+    }
     .presentation-container {
         flex-direction: row;
         justify-content: space-around;
-        height: 90vh;
     }
 
 .presentation-container .gabrielName {
@@ -50,7 +55,7 @@
     }
 
     .presentation-container .image-container img {
-        max-width: 350px;
+        width: 350px;
     }
 
     .skills-container {
@@ -73,11 +78,17 @@
     .card .projects-infos {
         padding: 1rem 1.5rem;
     }
+
+    .footer {
+        display: flex;
+        
+    }
 }
 
 @media (min-width: 1352px) {
     .displayDesktopMenu {
         max-width: 1366px;
+        padding-right: 1rem;
     }
 }
 

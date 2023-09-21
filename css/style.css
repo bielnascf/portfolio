@@ -3,6 +3,55 @@
     src: url('../fonts/valorantFont.ttf') format('trueType');
 }
 
+:root {
+    --text-color: #fff;
+    --background: #141414;
+    --border-color: #ffffff80;
+    --filter-invert: invert(1);
+    --border-image: #ffffff60;
+}
+
+.light {
+    --text-color: #000;
+    --background: #fff;
+    --filter-invert: none;
+}
+
+.darkMode-button {
+    display: flex;
+    gap: 0.7rem;
+    padding-top: 5rem;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--text-color);
+
+    border: 1px ;
+}
+
+#darkMode {
+    opacity: 0;
+
+    transition: all .3s ease-in-out;
+}
+
+#lightMode {
+    opacity: 1;
+    transition: all .3s ease-in-out;
+}
+
+#turnOn {
+    display: flex;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+#turnOff {
+    display: none;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
 ::-webkit-scrollbar {
     width: 0;
 }
@@ -14,6 +63,12 @@
 
 .show {
     opacity: 1;
+}
+
+body, html {
+    background-color: var(--background);
+
+    transition: background .3s ease-in;
 }
 
 
@@ -29,8 +84,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    border-bottom: 1px solid #cfc5c5ab;
-    background: #ffffffbd;
+    border-bottom: 1px solid #cfc5c579;
+    background: var(--background);
     position: fixed;
 }
 
@@ -39,20 +94,22 @@
     width: 100%;
     cursor: pointer;
     text-align: center;
+    color: var(--text-color);
 }
 
 .mobileMenuLinks {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #fff;
-
+    color: var(--text-color);
     background-image: linear-gradient(to right,#00C0FD,#E70FAA);
 }
 
 .mobileLink {
-    width: 100%;
+    display: flex;
+    justify-content: center;
     text-align: center;
+    width: 100%;
     font-size: 1.3rem;
     padding: 1rem;
     border-bottom: 1px solid #fff;
@@ -81,13 +138,13 @@
 
 .mobileMenu-container span:hover {
     background-image: linear-gradient(to right,#00C0FD,#E70FAA);
-    color: #fff;
+    color: var(--text-color);
     transition: all 0.3s ease-in-out;
 }
 
 .mobileLink:hover {
-    color: #000;
-    background-color: #ffffff;
+    color: var(--text-color);
+    background-color: var(--background);
     transition: all 0.3s ease-in;
 }
 
@@ -100,7 +157,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
     justify-content: space-evenly;
 
 
@@ -179,6 +236,9 @@
 }
 
 
+
+
+
 .tech-container div{
     display: flex;
     flex-direction: column;
@@ -198,7 +258,7 @@
 .tech-container p {
     font-weight: 700;
     font-size: 1rem;
-    color: #000000;
+    color: var(--text-color);
     display: block;
     opacity: 0;
 
@@ -231,8 +291,6 @@
     justify-content: center;
     gap: 1.5rem;
     padding: 2rem 0;
-
-    background-color: #fa80720e;
 }
 
 .card {
@@ -255,6 +313,7 @@
 .card .projects-infos h3 {
     text-align: center;
     font-size: 1.4rem;
+    color: var(--text-color);
 }
 
 .card .projects-infos p{
@@ -265,6 +324,7 @@
 .projects-infos .project-links {
     display: flex;
     justify-content: space-between;
+    color: var(--text-color);
 }
 
 .project-links .link1 {
@@ -290,10 +350,12 @@
 
 .displayDesktopMenu {
     display: none;
+    padding: 1.5rem 2rem;
+
+    background-color: var(--background);
 }
 
 .navLinks-container {
-    padding: 1.5rem 3rem;
     display: flex;
     justify-content: space-between;
 }
@@ -323,7 +385,7 @@
 .nav-links a {
     position: relative;
     padding-bottom: 0.75rem;
-    color: #000;
+    color: var(--text-color);
 }
 
 .nav-links a::after {
@@ -341,4 +403,66 @@
     width: 80%;
 }
 
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.footer {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin:  1rem auto;
+    font-size: 0.8rem;
+
+    padding: 1.5rem 2rem;
+
+    border-bottom: 1px solid #9b93939c;
+}
+
+.contact {
+    display: flex;
+    gap: 5rem;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    filter: var(--filter-invert);
+}
+
+.phone a {
+    transition: all .3s ease-in-out;
+}
+
+.phone a:hover {
+    transform: scale(1.02);
+}
+
+.mail {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    filter: var(--filter-invert);
+}
+
+.socialMedia {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    filter: var(--filter-invert);
+}
+
+.socialMedia img {
+    max-width: 20px;
+    transition: all .3s ease-in-out;
+}
+
+.socialMedia img:hover {
+    transform: scale(1.1);
+}
 

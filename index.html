@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="light">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./images/favicon/home.ico" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/style.css">
@@ -24,17 +23,17 @@
         <div class="displayMobileMenu">
             <div class="mobileMenuLinks-container">
                 <ul class="mobileMenuLinks">
-                    <a href="index.html" class="mobileLink">Home</a>
+                    <a href="index.html" class="mobileLink">Início</a>
                     <a href="#skills" class="mobileLink" id="mobileSkills">Skills</a>
-                    <a href="#projects" class="mobileLink" id="mobileProjects">Projects</a>
-                    <a href="aboutMe.html" target="_self" class="mobileLink" id="mobileAboutMe">About Me</a>
+                    <a href="#projects" class="mobileLink" id="mobileProjects">Projetos</a>
+                    <a href="curriculo-gabriel.pdf" class="mobileLink" download>Currículo</a>
                 </ul>
                 <ul class="mobileSocialMediaMenuLinks">
                     <a href="https://www.github.com/bielnascf/" class="mobileSocialMediaLink" target="_blank"><img src="./images/github-142-svgrepo-com.svg"></a>
                     <a href="https://www.linkedin.com/in/gabriel-nascimento-484450255/" class="mobileSocialMediaLink" target="_blank"><img src="./images/linkedin.png"></a>
                     <a href="https://api.whatsapp.com/send?phone=5521966038755&text=Ol%C3%A1,%20Gabriel!" class="mobileSocialMediaLink" target="_blank"><img src="./images/whatsapp.png"></a>
                 </ul>
-            </d>
+            </div>
         </div>
     </header>
 
@@ -46,18 +45,43 @@
         </div>
         <div class="nav-container">
             <ul class="nav-links">
-                <a href="index.html" class="link" target="_self">Home</a>
+                <a href="index.html" class="link" target="_self">Início</a>
                 <a href="#skills" class="link">Skills</a>
-                <a href="#projects" class="link">Projects</a>
-                <a href="#contact" class="link">Contact</a>
-                <a href="aboutMe.html" target="_self" class="link">About Me</a>
+                <a href="#projects" class="link">Projetos</a>
+                <a href="curriculo-gabriel.pdf" download class="link">
+                    Currículo
+                    <span class="material-symbols-outlined">
+                        download
+                    </span>
+                </a>
             </ul>
         </div>
     </nav>
 
+    <div class="darkMode-button">
+        <p>
+            Turn Off
+        </p>
+        <span class="material-symbols-outlined" id="darkMode">
+            dark_mode
+        </span>
+        <span class="material-symbols-outlined" id="turnOff">
+            toggle_off
+        </span>
+        <span class="material-symbols-outlined" id="turnOn">
+            toggle_on
+        </span>
+        <span class="material-symbols-outlined" id="lightMode">
+            light_mode
+        </span>
+        <p>
+            Turn On
+        </p>
+    </div>
+
     <section>
-        <div class="presentation-container hidden" id="home">
-            <h1>Hi &#128075, <br> My name is<br><span class="gabrielName">Gabriel Nascimento</span> and I build things for web</h1>
+        <div class="presentation-container" id="home">
+            <h1>Olá &#128075, <br> Meu nome é<br><span class="gabrielName">Gabriel Nascimento</span><br> Eu sou um Desenvolvedor WEB, muito prazer!</h1>
             <div class="image-container">
                 <img src="./images/gabriel.png">
             </div>
@@ -66,8 +90,8 @@
     
     <section>
         <div class="skills-container" id="skills">
-            <h2>My Skills</h2>
-            <p>Technologies and skills I've been working and learning with recently</p>
+            <h2>Minhas Skills</h2>
+            <p>Tecnologias e Habilidades que eu tenho usado recentemente.</p>
             <div class="tech-container hidden">
                 <div>
                     <img src="./images/techs/html-5.png" alt="Ícone HTML5">
@@ -102,11 +126,11 @@
                     <p data-techs="POWERPOINT"></p>
                 </div>
                 <div>
-                    <img src="./images/techs/responsive.png" alt="Ícone Responsividade">
+                    <img src="./images/techs/responsive.png" alt="Ícone Responsividade" class="invert">
                     <p data-techs="RESPONSIVITY"></p>
                 </div>
                 <div>
-                    <img src="./images/techs/accessibility.png" alt="Ícone Acessibilidade">
+                    <img src="./images/techs/accessibility.png" alt="Ícone Acessibilidade" class="invert">
                     <p data-techs="ACESSIBILITY"></p>
                 </div>
             </div>
@@ -115,27 +139,29 @@
 
     <section class="hidden">
         <div class="projects-container" id="projects">
-            <h2>Projects</h2>
-            <p>Things I've built so far</p>
+            <h2>Projetos</h2>
+            <p>Algumas coisas construídas recentemente.</p>
             <div class="cards-container hidden">
                 <div class="card">
                     <img src="./images/projects/airbnb-m.png" alt="Imagem Ilustrativa do projeto Airbnb Clone">
                     <div class="projects-infos">
                         <h3>Airbnb Clone</h3>
-                        <p>Open source Airbnb Clone Project using HTML5, CSS3 and Javascript.</p>
+                        <p>Projeto Airbnb Open Source para simular experiência profissional, utilizando HTML5, CSS3 e Javascript.</p>
                         <div class="project-links">
                             <div class="link1">
                                 <span class="material-symbols-outlined">
                                     link
                                 </span>
                                 <a href="#">
-                                    Live preview
+                                    Ver Projeto
                                 </a>
                             </div>
                             <div class="link2">
-                                <img src="./images/github-142-svgrepo-com.svg">
+                                <span class="material-symbols-outlined">
+                                    link
+                                </span>
                                 <a href="https://github.com/bielnascf/Airbnb">
-                                    View Code
+                                    Ver Código
                                 </a>
                             </div>
                         </div>
@@ -145,20 +171,22 @@
                     <img src="./images/projects/weather-m.png" alt="Imagem Ilustrativa do Projeto Weather APP">
                     <div class="projects-infos">
                         <h3>Weather App</h3>
-                        <p>Weather App using Weather API, HTML5, CSS3 and Javascript</p>
+                        <p>Aplicativo de Clima Tempo responsivo utilizando Weather API, HTML5, CSS e Javascript.</p>
                         <div class="project-links">
                             <div class="link1">
                                 <span class="material-symbols-outlined">
                                     link
                                 </span>
                                 <a href="https://bielnascf.github.io/projeto-weather/">
-                                    Live preview
+                                    Ver Projeto
                                 </a>
                             </div>
                             <div class="link2">
-                                <img src="./images/github-142-svgrepo-com.svg">
+                                <span class="material-symbols-outlined">
+                                    link
+                                </span>
                                 <a href="https://github.com/bielnascf/projeto-weather">
-                                    View Code
+                                    Ver Código
                                 </a>
                             </div>
                         </div>
@@ -168,20 +196,22 @@
                     <img src="./images/projects/zombies-m.png" alt="Imagem Ilustrativa do Projeto The Last of Us">
                     <div class="projects-infos">
                         <h3>The Last of Us</h3>
-                        <p>A website for fans of the franchise The Last of Us, using HTML5, CSS3 and Javascript.</p>
+                        <p>Um site para quem é fã da franquia The Last of Us, utilizando HTML5, CSS e Javascript.</p>
                         <div class="project-links">
                             <div class="link1">
                                 <span class="material-symbols-outlined">
                                     link
                                 </span>
                                 <a href="https://bielnascf.github.io/projeto-the-last-of-us/">
-                                    Live preview
+                                    Ver Projeto
                                 </a>
                             </div>
                             <div class="link2">
-                                <img src="./images/github-142-svgrepo-com.svg">
+                                <span class="material-symbols-outlined">
+                                    link
+                                </span>
                                 <a href="https://github.com/bielnascf/projeto-weather">
-                                    View Code
+                                    Ver Código
                                 </a>
                             </div>
                         </div>
@@ -191,20 +221,22 @@
                     <img src="./images/projects/login-m.png" alt="Imagem Ilustrativa do Projeto Tela de Login">
                     <div class="projects-infos">
                         <h3>Login Screen</h3>
-                        <p>A responsive Login Screen with focus on UI Experience, using HTML5 and CSS3. </p>
+                        <p>Um layout responsivo de uma tela de login, focando na experiência UI, utilizando HTML5 e CSS.</p>
                         <div class="project-links">
                             <div class="link1">
                                 <span class="material-symbols-outlined">
                                     link
                                 </span>
                                 <a href="https://bielnascf.github.io/tela-login">
-                                    Live preview
+                                    Ver Projeto
                                 </a>
                             </div>
                             <div class="link2">
-                                <img src="./images/github-142-svgrepo-com.svg">
+                                <span class="material-symbols-outlined">
+                                    link
+                                </span>
                                 <a href="https://github.com/bielnascf/tela-login">
-                                    View Code
+                                    Ver Código
                                 </a>
                             </div>
                         </div>
@@ -214,20 +246,22 @@
                     <img src="./images/projects/portfolio-m.png" alt="Imagem Ilustrativa do meu Portfólio">
                     <div class="projects-infos">
                         <h3>Portfolio</h3>
-                        <p>My Presentation Portfolio for job searches, using HTML5, CSS3 and Javascript.</p>
+                        <p>Meu portfolio de apresentação (você está aqui!), utilizando HTML5, CSS e Javascript.</p>
                         <div class="project-links">
                             <div class="link1">
                                 <span class="material-symbols-outlined">
                                     link
                                 </span>
                                 <a href="https://bielnascf.github.io/portfolio">
-                                    Live preview
+                                    Ver projeto
                                 </a>
                             </div>
                             <div class="link2">
-                                <img src="./images/github-142-svgrepo-com.svg">
+                                <span class="material-symbols-outlined">
+                                    link
+                                </span>
                                 <a href="https://github.com/bielnascf/portfolio">
-                                    View Code
+                                    Ver Código
                                 </a>
                             </div>
                         </div>
@@ -237,20 +271,22 @@
                     <img src="./images/projects/soon-m.png" alt="Projeto em Construção">
                     <div class="projects-infos">
                         <h3>Coming Soon</h3>
-                        <p>Projects will be posted here soon!</p>
+                        <p>Projeto futuro será postado aqui em breve!</p>
                         <div class="project-links">
                             <div class="link1">
                                 <span class="material-symbols-outlined">
                                     link
                                 </span>
                                 <a href="#">
-                                    Live preview
+                                    Ver Projeto
                                 </a>
                             </div>
                             <div class="link2">
-                                <img src="./images/github-142-svgrepo-com.svg">
+                                <span class="material-symbols-outlined">
+                                    link
+                                </span>
                                 <a href="#">
-                                    View Code
+                                    Ver Código
                                 </a>
                             </div>
                         </div>
@@ -259,7 +295,40 @@
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="navLinks-container">
+            <a href="index.html" class="nav-logo">
+                &lt; BIELNASCF &gt;
+            </a>
+        </div>
+        <div class="phone">
+            <span class="material-symbols-outlined">
+                smartphone
+            </span>
+            <a href="https://api.whatsapp.com/send?phone=5521966038755&text=Ol%C3%A1,%20Gabriel!">
+                +55 21 966038755
+            </a>
+        </div>
+        <div class="mail">
+            <span class="material-symbols-outlined">
+                mail
+            </span>
+            <p>
+                bielporto1@hotmail.com
+            </p>
+        </div>
+        <ul class="socialMedia">
+            <a href="https://www.github.com/bielnascf/">
+                <img src="./images/github-142-svgrepo-com.svg">
+            </a>
+            <a href="https://www.linkedin.com/in/gabriel-nascimento-484450255/">
+                <img src="./images/linkedin.png">
+            </a>
+        </ul>
+    </footer>
 </body>
+<script src="js/lightDark_mode.js"></script>
 <script src="js/scroll_animation.js"></script>
 <script src="js/mobile_menu.js"></script>
 <script src="js/techs.js"></script>

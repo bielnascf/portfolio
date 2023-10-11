@@ -45,6 +45,10 @@
     }
 }
 
+    .presentation-container {
+        height: 90vh;
+    }
+
     .presentation-container h1 {
         padding-top: 0;
         font-size: 2.5rem;
@@ -59,12 +63,15 @@
     }
 
     .skills-container {
-        height: 90vh;
+        height: 100vh;
+        justify-content: space-evenly;
+        padding: 4rem 3rem;
     }
 
     .projects-container {
-        padding-top: 6rem;
         align-items: center;
+        padding: 5rem 3rem;
+        gap: 1.5rem;
     }
 
     .projects-container .cards-container {
@@ -81,7 +88,6 @@
 
     .footer {
         display: flex;
-        
     }
 }
 
@@ -93,12 +99,6 @@
 }
 
 @media (max-width: 425px) {
-
-
-    .skills-container {
-        height: 100vh;
-        padding-top: 4rem;
-    }
 
     .skills-container .tech-container {
         margin: 0;
